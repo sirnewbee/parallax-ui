@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parallax-ui';
+
+  checked = false;
+  indeterminate = false;
+  labelPosition = 'after';
+  disabled = false;
 }
