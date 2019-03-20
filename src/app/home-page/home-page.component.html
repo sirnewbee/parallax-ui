@@ -28,6 +28,13 @@
   <a href="#landing"><h1>About</h1></a>
 </div>
 
-<div id="fab" class="back-top">
-  <a data-target='dropdown1' href="#landing"><i class="material-icons">dehaze</i></a>
+<div id="fab" class="back-top" (click)="toggleMenu()">
+  <a data-target='dropdown1'><i class="material-icons">dehaze</i></a>
+</div>
+<div class="menu-list" *ngIf="menu" (click)="toggleMenu()">
+  <div class="menu-item"><a href="#landing">Landing</a></div>
+  <div class="menu-item"><a href="#home">Home</a></div>
+  <div class="menu-item"><a href="#equipments">Equipments</a></div>
+  <div class="menu-item"><a href="#contacts">Contact</a></div>
+  <div class="menu-item"><a href="#about">About Us</a></div>
 </div>

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   public bounding: any;
+  public menu: boolean = false;
 
   constructor() { }
 
@@ -26,5 +27,9 @@ export class HomePageComponent implements OnInit {
       console.log('Not in the viewport... whomp whomp');
       document.getElementById("fab").style.visibility = "visible";
     }
-  };
+  }
+
+  toggleMenu(){
+    this.menu = !this.menu;
+  }
 }
