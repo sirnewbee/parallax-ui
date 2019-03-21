@@ -176,24 +176,36 @@ ul li.item5
 .menu-list
     :background-color white
     :position fixed
-    :background-color rgba(0,0,0,0.9)
+    :background-color rgba(0,0,0,1)
     :text-align center 
     :position fixed
     :float bottom
-    :border-radius 10px
-    :width 200px
-    :height 120px
-    :top 84%
-    :left 90%
+    :width 250px
+    :height 100%
+    :top 50%
+    :left 95%
     :transform translate(-50%,-50%)
     :float bottom
     :z-index 999
     :margin 0
     :padding 0
+    :padding-right 10px
 
 .menu-item
     :width 100%
-    :margin-top 3%
+    :margin-top 30px
+    a
+        :font-size 20px
+        :color rgb(255,255,255)
+        :transition-duration 0.2s
+    a:hover
+        :font-size 25px
+        :color rgb(255,0,0)
+    i
+        :font-size 50px
+        :transition-duration 0.2s
+    i:hover
+        :font-size 60px
 
 /*Start of HTML Elements*/
 .landing-bg a 

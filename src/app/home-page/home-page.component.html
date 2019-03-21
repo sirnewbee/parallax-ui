@@ -8,33 +8,34 @@
   </ul>
 </div>
 
-<div id="home" class="home-bg">
+<div id="home" class="home-bg" (click)="toggleMenu(false)">
   <a href="#landing"><h1>Home</h1></a>
 </div>
 
-<div id="equipments" class="equipments-bg">
+<div id="equipments" class="equipments-bg" (click)="toggleMenu(false)">
   <a href="#landing">Equipments</a>
 </div>
 
-<div id="events" class="events-bg">
+<div id="events" class="events-bg" (click)="toggleMenu(false)">
   <a href="#landing"><h1>Events</h1></a>
 </div>
 
-<div id="contacts" class="contacts-bg">
+<div id="contacts" class="contacts-bg" (click)="toggleMenu(false)">
   <a href="#landing"><h1>Contact</h1></a>
 </div>
 
-<div id="about" class="about-bg">
+<div id="about" class="about-bg" (click)="toggleMenu(false)">
   <a href="#landing"><h1>About</h1></a>
 </div>
 
-<div id="fab" class="back-top" (click)="toggleMenu()">
+<div id="fab" class="back-top" (click)="toggleMenu(true)">
   <a data-target='dropdown1'><i class="material-icons">dehaze</i></a>
 </div>
-<div class="menu-list" *ngIf="menu" (click)="toggleMenu()">
-  <div class="menu-item"><a href="#landing">Landing</a></div>
+<div id="fab-menu" class="menu-list" *ngIf="menu">
+  <div class="menu-item"><a href="#landing"><i class="material-icons">home</i></a></div>
   <div class="menu-item"><a href="#home">Home</a></div>
   <div class="menu-item"><a href="#equipments">Equipments</a></div>
+  <div class="menu-item"><a href="#events">Events</a></div>
   <div class="menu-item"><a href="#contacts">Contact</a></div>
   <div class="menu-item"><a href="#about">About Us</a></div>
 </div>
